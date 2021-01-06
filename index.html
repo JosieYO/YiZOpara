@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="services">
+    	<br>
+    	<br>
+      <h1 style="font-size: 20px;font-family: Lucida Handwriting;color:#8FBC8F">Hello, I'm</h1>
+     <br>
+      <h1 style="font-size: 36px;font-family: Athelas;color:#6495ED">YI&emsp;OPARA</h1>
+      &emsp;&emsp;&emsp;&emsp;<a href="https://www.linkedin.com/in/yzopara/"><i class="fab fa-linkedin"></i></a>
+      <div class="cen">
+        <div class="mypic">
+          
+          <h2 style="font-family: Papyrus">About Me</h2>
+          <div class='me'>
+          <p style="font-size: 18px;font-family: Athelas;color:#6495ED">&emsp;I am a passionate data analyst, critical thinker based in Atlanta, GA. Driven and permanently curious, I've been active in statistical world for over 5 years.
+          </div>
+          	<br><br>
+          <img src="IMG_2199.JPG"/ class='pic-img'>
+          <br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <div class="mypic">
+          <h2 style="font-family: Papyrus">Skills</h2>
+          <div class="myskill1">
+          <p style="font-size: 20px;font-family: Athelas;font-weight: bold"> Data Analysis</p>
+          <br>
+          <p>• Visualization</p>
+          <p>• Text Mining</p>
+          <p>• Machine Learning</p>
+        </div>
+        <div class="myskill2">
+          <p style="font-size: 20px;font-family: Athelas;font-weight: bold">Language</p>
+          <br>
+          <p> • English</p>
+          <p> • Mandarin Chinese</p>
+        </div>
+     <div class="myskill3">
+          <p style="font-size: 20px;font-family: Athelas;font-weight: bold">Other</p>
+          <br>
+          <p> • Running</p>
+          <p> • Skating</p>
+          <p> • Swimming</p>
+          </div>
+          <br>
+      </div>  
+
+     <div class="mypic">
+          <h2 style="font-family: Papyrus;color: black">Project</h2>
+          <img src="IMG_2214.JPG"/ class='pic-proj'>
+          <p style="font-size: 20px;font-family: Athelas">Covid-19 Cases vs Unemployment Claims, Python</p>
+          <br><br><br><br>
+          <img src="IMG_2213.JPG"/ class='pic-proj'>
+          <p style="font-size: 20px;font-family: Athelas">Amusement Park Ticket, R</p>
+          <br><br><br>
+      </div>
+
+        <div class="mypic">
+          <h2 style="font-family: Papyrus">Travel</h2>
+          <br><br><br><br>
+          <img src="IMG_2218.JPG"/ class='pic-tra'>
+          <br><br><br><br>
+          <p style="font-size: 20px;font-family: Athelas">Star Ferry Pier, Hong Kong</p>
+          <p style="font-size: 20px;font-family: Athelas">American Art Museum, Washington DC</p>
+          <p style="font-size: 20px;font-family: Athelas">Vizcaya, Miami</p>
+          <p style="font-size: 20px;font-family: Athelas">MoMA, NYC</p>
+          <br><br>
+          
+
+  </div>
+
+        <div class="mypic">
+        	<h2 style="font-family: Papyrus">Cooking</h2>
+          <img src="IMG_2204.JPG"/ class='pic-cook'>
+          <p style="font-size: 20px;font-family: Athelas">Egg & Ham Sandwich</p>
+          <br><br><br>
+          <img src="AF215346-0C00-48FF-8FBF-8D532FFF4EE8.JPG"/ class='pic-cook'>
+          <p style="font-size: 20px;font-family: Athelas">Shrimp Mushroom Spaghetti</p>
+          <br><br><br>
+          <img src="IMG_1169.JPG"/ class='pic-cook'>
+          <p style="font-size: 20px;font-family: Athelas">Banana Boat</p>
+          <br>
+         </div>
+
+        <div class="mypic">
+          <h2 style="font-family: Papyrus">Amusement Park Ticket</h2>
+          <p style="font-family: Georgia;font-weight: bold">INTRODUCTION</p>
+          <div class='me'>
+          <p style="font-family: Athelas">&emsp;The Amusement Park dataset comprises of tickets purchase details of registered and unregistered customers in Wonderland. It includes 6 variables namely: Time, Temperature, Humidity, Wind speed, Ticket 1 and Ticket 2; wherein are sold tickets and response variables. Eight machine learning algorithms: Linear, Ridge, Lasso Regression, Principal Component Analysis, Generalized Additive Model, Rgression Decision Tree, Random Forest and Boosting for decision tree have been implemented in model selection. The packages 'glmnet','pls','gam','rpart','randomForest' & 'gbm' were used in analysis.</p>
+      </div>
+          <p style="font-family: Georgia;font-weight: bold">DATA PROCESSING</p>
+          <div class='me'>
+          <p style="font-family: Athelas">&emsp;The variable 'Time' was seperated into 7 new variables: Year, Month, Day, Weekday, Hour, Minute, and Second. After considering varaibles' level and correlations, only Year, Month, Weekday and Hour were selected and treated as categorical variables for futher analysis. For numerical variables: Temperature, Humidity and Wind speed, the correlation rates were low, so there was no interaction term considered to fit in models, and z-score normalization technique was used to adjust these three numeric variables. 10-fold cross validation was implemented for model selection.</p>
+      </div>
+          <p style="font-family: Georgia;font-weight: bold">CONCLUSION</p>
+          <div class='me'>
+          <p style="font-family: Athelas">&emsp;By comparing MSE (Mean Square Error) values in Ticket 1 and Ticket 2 models, variables 'Year','Month','Weekday','Hour','Temperature','Humidity' and 'Windspeed' were used to predict number of Ticket 1 and Ticket 2. The Boosting method (MSE=229.87 & 1573.59)and Random Forest(MSE=228.48 & 1523.96) had similar MSE. However, Random Forest was much more slower than Boosting. Therefore, to predict Ticket 1, the Boosting with iteration 1000, the maximum depth of each tree was 7 and learning rate was 0.1. To predict Ticket 2, the Boosting with iteration 1000, maximum depth of each tree was 6, learning rate was 0.1.</p>
+      </div>
+         </div>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
